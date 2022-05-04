@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+header.cabeceraPrincipal, nav.menuPrincipal, aside.sponsor,main,footer.piePagina{
+    background-color: rgb(148, 250, 46);
+    color: rgb(47, 83, 10);
+    width: 90%;
+    margin: 0 auto;
+}
+header.cabeceraPrincipal{
+    background-color: #ffffff;
+}
+header.cabeceraPrincipal h1{
+    font-size: 25px;
+    color: #000;
+}
+.cabeceraPrincipal .logo{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 20%;
+    display: inline-block;
+    padding: 1em 1em;
+    text-align: center;
+}
+.logo .iniciales-logo{
+    padding: 5px;
+    border: 2px solid #000;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+section.seccionCabecera{
+    width: 70%;
+    display: inline-block;
+    text-align: right;
+}
+/*  -------------- Barra de busqueda  ------------------*/
+.seccionCabecera .barra-busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.seccionCabecera .barra-busqueda input{
+    min-width: 30%;
+    padding:  0 14px;
+    height: 33px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.seccionCabecera .barra-busqueda button{
+    height: 35px;
+    border: 1px solid #ccc;
+    border-left: none;
+    color: #545454;
+    background-color: #f8f8f8;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.seccionCabecera .barra-busqueda button:hover{
+    background-color: #f1f1f1;
+}
+/*  -------------- FIN Barra de busqueda  ------------------*/
+
+
+nav.menuPrincipal, main,aside.sponsor,footer.piePagina{
+    margin-top: 2px;
+}
+nav.menuPrincipal{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+}
+nav.menuPrincipal a{
+    background-color: #ffffff;
+    padding: 10px;
+    color: #000;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    transition:  0.2s ease all;
+}
+nav.menuPrincipal a:hover{
+    background-color: #000;
+    color: #ffffff;
+}
+
+.galeria {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slider-galeria {
+    position: relative;
+    margin: auto;
+}
+
+.slider img {
+    width: 100%;
+    height: 70vh;
+}
+
+.anterior, .siguiente {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.siguiente {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dots {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active .dot:hover {
+    background-color: #717171;
+}
+
+main{
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.section-titulo {
+    margin-bottom: 2rem;
+}
+
+.menu-diario, .noticias {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.contenedor-menu, .contenedor-noticia {
+    display: grid;
+    gap: 4rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+}
+
+section.platillo, section.noticia {
+    display: flex;
+    background: #ffffff;
+    text-align: justify;
+}
+
+.titulo {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.platillo img, .noticia img {
+    width: 100%;
+    height: 40vh;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.extracto{
+    font-size: 14pt;
+    line-height: 25px;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #868686;
+}
+
+.btn-link{
+    background: #2a2929;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+.btn-link:hover{
+    background-color: #000;
+}
+
+/*  -------------- Auspiciantes  ------------------*/
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.person {
+    display: flex;
+    align-items: center;
+    height: 350px;
+    margin-right: 5rem;
+}
+
+.person .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.person .content {
+    width: 200px;
+    margin-left: 2rem;
+}
+
+.person .content h1 {
+    color: orange;
+}
+
+.person .content button {
+    background-color: green;
+    color: white;
+    padding: 0.8rem 1.5rem;
+}
+
+footer.piePagina{
+    text-align: right;
+}
+footer.piePagina h5{
+    padding: 1em 2em;
+}
+@media only screen and (max-width: 600px) {
+  .sponsor  {
+    background-color: red;
+
+  }
+}
